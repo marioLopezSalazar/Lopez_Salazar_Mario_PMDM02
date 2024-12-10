@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<characters>
+    <character>
+        <name>Mario</name>
+        <picture>https://mario.nintendo.com/static/a5f7fe49f4862aa68eaba347ee05c336/fef79/mario.png</picture>
+        <description>The iconic plumber hero of the Mushroom Kingdom.</description>
+        <detail>Mario is the main character of the Super Mario series, known for rescuing Princess Peach.</detail>
+        <skills>Brave, Incredible jumps, Rescue, Special powers</skills>
+    </character>
+    <character>
+        <name>Luigi</name>
+        <picture>https://mario.nintendo.com/static/12386c8cabe28d812b427d21c9f26d52/a4565/luigi.png</picture>
+        <description>Mario's younger brother and loyal companion.</description>
+        <detail>Luigi, although shyer than Mario, is a brave hero in his own right.</detail>
+        <skills>Brave, Climber, Long jumps, Rescue</skills>
+    </character>
+    <character>
+        <name>Princess Peach</name>
+        <picture>https://mario.nintendo.com/static/43a96c1d5b681d338864aac15cd391b9/884cd/peach.png</picture>
+        <description>The princess of the Mushroom Kingdom, frequently rescued by Mario.</description>
+        <detail>Peach is known for her kindness and bravery, playing a key role in many games.</detail>
+        <skills>Brave, Leadership, Magic powers, Friendly</skills>
+    </character>
+    <character>
+        <name>Bowser</name>
+        <picture>https://mario.nintendo.com/static/7204f288e3e823a8203c445fb6cc0d7e/579b4/bowser.png</picture>
+        <description>The main antagonist of the series, known as the King of the Koopas.</description>
+        <detail>Bowser constantly tries to capture Princess Peach to conquer the Mushroom Kingdom.</detail>
+        <skills>Brute strength, Destructive flames, Domination, Evil</skills>
+    </character>
+    <character>
+        <name>Yoshi</name>
+        <picture>https://mario.nintendo.com/static/850b7938ec9df2a77921738a12857e88/5dfac/yoshi.png</picture>
+        <description>A friendly dinosaur and loyal ally of Mario.</description>
+        <detail>Yoshi can use his tongue to eat enemies and turn them into eggs to use as weapons.</detail>
+        <skills>Long tongue, Egg shooter, High jump, Loyal</skills>
+    </character>
+    <character>
+        <name>Toad</name>
+        <picture>https://mario.nintendo.com/static/e3ebf11b069067da929b608250baa44e/1ead7/toad.png</picture>
+        <description>A Mushroom Kingdom inhabitant and Princess Peach's assistant.</description>
+        <detail>Toad is known for his bravery and loyalty to the princess.</detail>
+        <skills>Brave, Fast, Loyal, Strategic help</skills>
+    </character>
+    <character>
+        <name>Princess Daisy</name>
+        <picture>https://mario.nintendo.com/static/b625bdf51061d55b220d82eb9b61442c/bc399/daisy.png</picture>
+        <description>The princess of Sarasaland and a close friend of Peach.</description>
+        <detail>Daisy is known for her energetic and competitive personality.</detail>
+        <skills>Competitive, Energetic, Brave, Cheerful</skills>
+    </character>
+    <character>
+        <name>Donkey Kong</name>
+        <picture>https://mario.nintendo.com/static/e1d6f43b375300777c647d7505dfc514/287e8/donkey-kong.png</picture>
+        <description>A strong gorilla who used to be Mario's enemy but is now an occasional ally.</description>
+        <detail>Donkey Kong is known for his strength and his starring role in his own game series.</detail>
+        <skills>Immense strength, Powerful punches, Agility, Territorial</skills>
+    </character>
+    <character>
+        <name>Wario</name>
+        <picture>https://mario.nintendo.com/static/2e8e71c5b38a5aedd5eef91c3d54bf13/93c1a/wario.png</picture>
+        <description>A rival of Mario, known for his greed and selfish attitude.</description>
+        <detail>Wario stars in his own game series, including WarioWare.</detail>
+        <skills>Greedy, Strong, Tricks, Cunning</skills>
+    </character>
+    <character>
+        <name>Waluigi</name>
+        <picture>https://mario.nintendo.com/static/54c0617c992012b38e212c154f4e3944/616d9/waluigi.png</picture>
+        <description>Wario's partner, known for his mischievous attitude.</description>
+        <detail>Although he doesn't have his own game, Waluigi is a popular character in the series.</detail>
+        <skills>Cunning, Mischief, Sports skills, Competitive</skills>
+    </character>
+    <character>
+        <name>Bowser Jr.</name>
+        <picture>https://mario.nintendo.com/static/7b0d4176a54cedac2466b9e5bf68548f/93c1a/bowser-jr.png</picture>
+        <description>Bowser's son, following in his father's footsteps as an antagonist.</description>
+        <detail>Bowser Jr. is loyal to his father and often tries to defeat Mario.</detail>
+        <skills>Cunning, Manipulative, Strong, Loyal</skills>
+    </character>
+    <character>
+        <name>Rosalina</name>
+        <picture>https://mario.nintendo.com/static/9413cb5d146400e7368855759d084c69/3837a/rosalina.png</picture>
+        <description>The protector of the cosmos and mother of the Lumas.</description>
+        <detail>Rosalina debuted in Super Mario Galaxy and is known for her wisdom and power.</detail>
+        <skills>Wisdom, Cosmic power, Calm, Protects Lumas</skills>
+    </character>
+</characters>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreferenceCompat
+        android:key="languageEnglish"
+        android:title="@string/languageSpanishOrEnglish"
+        android:summary="@string/languageSpanishOrEnglishSummary"
+        android:defaultValue="false" />
+
+</PreferenceScreen>

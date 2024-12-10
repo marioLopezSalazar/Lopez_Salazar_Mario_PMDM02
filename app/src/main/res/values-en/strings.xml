@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Super Mario Bros - Mario López Salazar</string>
+    <string name="load_error">Error loading characters.</string>
+    <string name="image_description">Character image</string>
+    <string name="character_list">Super Mario Bros Characters</string>
+    <string name="character_detail">Character details</string>
+    <string name="welcome">Welcome to Mario\'s world</string>
+    <string name="selectedCharacter">"The selected character is "</string>
+    <string name="skills">Skills</string>
+    <string name="about">About...</string>
+    <string name="developedBy">App developed by</string>
+    <string name="version">Version</string>
+    <string name="ok">OK</string>
+    <string name="unknown">Unknown</string>
+    <string name="noDataCharacter">Character data not available.</string>
+    <string name="settingsTitle">Settings</string>
+    <string name="languageSpanishOrEnglish">Language</string>
+    <string name="languageSpanishOrEnglishSummary">Switch to English.</string>
+    <string name="home">Home</string>
+    <string name="open_navigation_drawer">Open side menu</string>
+    <string name="close_navigation_drawer">Close side menu</string>
+</resources>

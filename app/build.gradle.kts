@@ -11,7 +11,8 @@ android {
         minSdk = 24
         targetSdk = 34
         versionCode = 1
-        versionName = "1.0"
+        versionName = "1.1"
+        resValue("string", "developer_name", "Mario López Salazar")
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -31,20 +32,24 @@ android {
     }
 
     buildFeatures{
-        viewBinding = true;
-        dataBinding = true;
+        viewBinding = true
+        dataBinding = true
     }
 }
 
 dependencies {
 
-    implementation("androidx.navigation:navigation-ui:2.8.4")
-    implementation("androidx.navigation:navigation-fragment:2.8.4")
+    implementation(libs.navigation.ui)
+    implementation(libs.navigation.fragment)
+    implementation(libs.recyclerview)
+    implementation(libs.cardview)
+    implementation (libs.picasso)
 
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(libs.preference)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
