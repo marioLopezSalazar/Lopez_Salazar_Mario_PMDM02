@@ -1,9 +1,9 @@
-package com.iesaguadulce.lopez_salazar_mario_pmdm02;
+package com.iesaguadulce.lopez_salazar_mario_pmdm02.character_list;
 
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.iesaguadulce.lopez_salazar_mario_pmdm02.databinding.CharacterCardviewBinding;
 import com.squareup.picasso.Picasso;
+import com.iesaguadulce.lopez_salazar_mario_pmdm02.model.Character;
 
 public class CharacterViewHolder extends RecyclerView.ViewHolder {
 

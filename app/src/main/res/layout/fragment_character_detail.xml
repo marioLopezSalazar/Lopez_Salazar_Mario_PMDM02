@@ -4,44 +4,37 @@
     android:layout_height="match_parent"
     android:padding="20dp">
 
+    <!-- CHARACTER DETAILS (PICTURE + NAME + DESCRIPTION + SKILLS) -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="vertical">
 
         <ImageView
             android:id="@+id/picture"
+            style="@style/CharacterPicture"
             android:layout_width="150dp"
             android:layout_height="300dp"
-            android:scaleType="centerInside"/>
+            android:contentDescription="@string/image_description" />
 
         <TextView
             android:id="@+id/name"
+            style="@style/CharacterNameDetailStyle"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Game Name"
-            android:textSize="35sp"
-            android:textStyle="bold"
-            android:layout_marginTop="8dp" />
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/description"
+            style="@style/CharacterDescriptionDetailStyle"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Description"
-            android:textSize="16sp"
-            android:layout_margin="6dp"
-            android:gravity="center"/>
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/skills"
+            style="@style/CharacterDescriptionSkillsStyle"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Detail"
-            android:textSize="18sp"
-            android:layout_margin="6dp"
-            android:gravity="center"/>
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 </android.widget.ScrollView>

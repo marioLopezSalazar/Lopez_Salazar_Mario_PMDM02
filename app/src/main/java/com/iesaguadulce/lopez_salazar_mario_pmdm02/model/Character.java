@@ -1,4 +1,4 @@
-package com.iesaguadulce.lopez_salazar_mario_pmdm02;
+package com.iesaguadulce.lopez_salazar_mario_pmdm02.model;
 
 public class Character {
 

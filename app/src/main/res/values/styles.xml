@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Splash">
+        <item name="android:cropToPadding">true</item>
+        <item name="android:padding">50dp</item>
+        <item name="android:src">@drawable/supermario_icon</item>
+        <item name="android:contentDescription">@string/logo</item>
+    </style>
+
+
+    <!-- TOOLBAR -->
+
+    <style name="ToolBarStyle" parent="Theme.Material3.DayNight">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:elevation">5dp</item>
+    </style>
+
+
+    <!-- NAVIGATION DRAWER -->
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:background">@color/background_color</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="NavigationDrawerAppName">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="NavigationDrawerAppDeveloper">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+
+    <!-- CHARACTERS PICTURES -->
+
+    <style name="CharacterPicture">
+        <item name="android:contentDescription">@string/image_description</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+
+    <!-- CHARACTERS CARDVIEW -->
+
+    <style name="CharacterCardViewStyle">
+        <item name="cardBackgroundColor">@color/secondary_color</item>
+        <item name="cardCornerRadius">25dp</item>
+        <item name="cardElevation">8dp</item>
+    </style>
+
+    <style name="CharacterNameCardViewStyle">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginStart">10pt</item>
+    </style>
+
+    <style name="CharacterDescriptionCardViewStyle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginStart">10pt</item>
+    </style>
+
+
+    <!-- CHARACTERS DETAIL -->
+
+    <style name="CharacterNameDetailStyle">
+        <item name="android:textSize">50sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="CharacterDescriptionDetailStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CharacterDescriptionSkillsStyle">
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+</resources>

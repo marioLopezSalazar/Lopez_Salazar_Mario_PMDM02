@@ -1,6 +1,5 @@
 package com.iesaguadulce.lopez_salazar_mario_pmdm02;
 
-import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -13,9 +12,13 @@ import androidx.navigation.*;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.*;
 import androidx.preference.PreferenceManager;
-
 import com.iesaguadulce.lopez_salazar_mario_pmdm02.databinding.ActivityMainBinding;
+import com.iesaguadulce.lopez_salazar_mario_pmdm02.model.Character;
+import com.iesaguadulce.lopez_salazar_mario_pmdm02.model.Database;
+import com.iesaguadulce.lopez_salazar_mario_pmdm02.settings.SettingsFragment;
+
 import java.util.ArrayList;
+
 
 /**
  * MainActivity is the entry point of the application and is responsible for inflating
@@ -132,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
         toggle.syncState();  //Sincroniza el estado inicial
     }
 
-    void onChangeFragment(NavController navController, NavDestination navDestination, Bundle bundle) {
+    void onChangeFragment(NavController navControllern, NavDestination navDestination, Bundle bundle) {
         if(toggle == null)
             return;
 
@@ -144,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
      * @return A collection of Character objects (may be empty but not null).
      */
     @NonNull
-    ArrayList<Character> loadCharacters(){
+    public ArrayList<Character> loadCharacters(){
         return Database.load(this);
     }
 
@@ -156,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
      *
      * @param character The character whose details are to be displayed in the character detail screen.
      */
-    void launchCharacterDetail(Character character) {
+    public void launchCharacterDetail(Character character) {
 
         // Encapsulating the character's data in a Bundle object:
         Bundle bundle = new Bundle();

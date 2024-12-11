@@ -1,4 +1,4 @@
-package com.iesaguadulce.lopez_salazar_mario_pmdm02;
+package com.iesaguadulce.lopez_salazar_mario_pmdm02.character_list;
 
 import android.os.Bundle;
 import androidx.annotation.NonNull;
@@ -11,9 +11,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import java.util.*;
-
 import com.google.android.material.snackbar.Snackbar;
+import com.iesaguadulce.lopez_salazar_mario_pmdm02.model.Character;
 import com.iesaguadulce.lopez_salazar_mario_pmdm02.databinding.FragmentCharacterListBinding;
+import com.iesaguadulce.lopez_salazar_mario_pmdm02.*;
 
 
 public class CharacterListFragment extends Fragment {

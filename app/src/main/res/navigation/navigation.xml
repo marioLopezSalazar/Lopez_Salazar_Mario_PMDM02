@@ -8,16 +8,16 @@
 
     <fragment
         android:id="@+id/characterList"
-        android:name="com.iesaguadulce.lopez_salazar_mario_pmdm02.CharacterListFragment"
+        android:name="com.iesaguadulce.lopez_salazar_mario_pmdm02.character_list.CharacterListFragment"
         android:label="fragment_character_list"
         tools:layout="@layout/fragment_character_list" />
     <fragment
         android:id="@+id/characterDetail"
-        android:name="com.iesaguadulce.lopez_salazar_mario_pmdm02.CharacterDetailFragment"
+        android:name="com.iesaguadulce.lopez_salazar_mario_pmdm02.character_detail.CharacterDetailFragment"
         android:label="fragment_character_detail"
         tools:layout="@layout/fragment_character_detail" />
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.iesaguadulce.lopez_salazar_mario_pmdm02.SettingsFragment"
+        android:name="com.iesaguadulce.lopez_salazar_mario_pmdm02.settings.SettingsFragment"
         android:label="SettingsFragment" />
 </navigation>

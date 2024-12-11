@@ -1,4 +1,4 @@
-package com.iesaguadulce.lopez_salazar_mario_pmdm02;
+package com.iesaguadulce.lopez_salazar_mario_pmdm02.character_list;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,6 +6,8 @@ import android.view.*;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.*;
+import com.iesaguadulce.lopez_salazar_mario_pmdm02.*;
+import com.iesaguadulce.lopez_salazar_mario_pmdm02.model.Character;
 import com.iesaguadulce.lopez_salazar_mario_pmdm02.databinding.CharacterCardviewBinding;
 
 public class CharacterRecyclerviewAdapter extends RecyclerView.Adapter<CharacterViewHolder> {

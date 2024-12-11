@@ -1,14 +1,15 @@
-package com.iesaguadulce.lopez_salazar_mario_pmdm02;
+package com.iesaguadulce.lopez_salazar_mario_pmdm02.model;
 
 import android.content.Context;
 import java.util.*;
 import android.util.Xml;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
+import com.iesaguadulce.lopez_salazar_mario_pmdm02.R;
 import org.xmlpull.v1.XmlPullParser;
 import java.io.*;
 
-class Database {
+public class Database {
 
     @NonNull
     public static ArrayList<Character> load(Context context){

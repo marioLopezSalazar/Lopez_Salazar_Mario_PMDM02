@@ -20,4 +20,5 @@
     <string name="home">Inicio</string>
     <string name="open_navigation_drawer">Abrir menú lateral</string>
     <string name="close_navigation_drawer">Cerrar navegación lateral</string>
+    <string name="logo">Super Mario Bros</string>
 </resources>

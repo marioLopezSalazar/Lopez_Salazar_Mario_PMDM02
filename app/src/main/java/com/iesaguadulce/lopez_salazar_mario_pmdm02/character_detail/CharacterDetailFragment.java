@@ -1,21 +1,15 @@
-package com.iesaguadulce.lopez_salazar_mario_pmdm02;
+package com.iesaguadulce.lopez_salazar_mario_pmdm02.character_detail;
 
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.*;
+import androidx.appcompat.app.*;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
-
 import android.text.Html;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+import android.view.*;
 import android.widget.Toast;
-
+import com.iesaguadulce.lopez_salazar_mario_pmdm02.R;
 import com.iesaguadulce.lopez_salazar_mario_pmdm02.databinding.FragmentCharacterDetailBinding;
 import com.squareup.picasso.Picasso;
 

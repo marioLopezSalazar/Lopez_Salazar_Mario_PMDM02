@@ -1,13 +1,11 @@
-package com.iesaguadulce.lopez_salazar_mario_pmdm02;
+package com.iesaguadulce.lopez_salazar_mario_pmdm02.settings;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
-
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.preference.PreferenceFragmentCompat;
-import androidx.preference.SwitchPreferenceCompat;
+import androidx.appcompat.app.*;
+import androidx.preference.*;
+import com.iesaguadulce.lopez_salazar_mario_pmdm02.MainActivity;
+import com.iesaguadulce.lopez_salazar_mario_pmdm02.R;
 
 import java.util.Locale;
 
@@ -30,7 +28,7 @@ public class SettingsFragment extends PreferenceFragmentCompat {
         }
     }
 
-    static boolean changeLanguage(MainActivity activity, String language) {
+    public static boolean changeLanguage(MainActivity activity, String language) {
         //Cambiar el idioma de la app utilizando la configuración del sistema
         Locale locale = new Locale(language);
         Locale.setDefault(locale);

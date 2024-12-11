@@ -20,4 +20,5 @@
     <string name="home">Home</string>
     <string name="open_navigation_drawer">Open side menu</string>
     <string name="close_navigation_drawer">Close side menu</string>
+    <string name="logo">Super Mario Bros</string>
 </resources>

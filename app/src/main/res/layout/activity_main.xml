@@ -3,48 +3,51 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Barra de herramientas -->
+    <!-- TOOLBAR -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
+        style="@style/ToolBarStyle"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:elevation="5dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+
+    <!-- DRAWERLAYOUT (MAIN SECTION) -->
     <androidx.drawerlayout.widget.DrawerLayout
         android:id="@+id/drawer_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="?attr/actionBarSize">
 
-        <!-- Contenedor de fragmentos -->
+        <!-- FRAGMENT CONTAINTER (NAVHOSTFRAGMENT) -->
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragments_container"
             android:name="androidx.navigation.fragment.NavHostFragment"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            app:navGraph="@navigation/navigation"
             app:defaultNavHost="true"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/toolbar"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:navGraph="@navigation/navigation" />
 
+        <!-- NAVIGATION DRAWER -->
         <com.google.android.material.navigation.NavigationView
             android:id="@+id/navigation_view"
+            style="@style/NavigationDrawerStyle"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/navigatordrawer_header"
             app:menu="@menu/drawer_menu"
-            android:layout_gravity="start"/>
-        <!--app:headerLayout="@layout/nav_header"-->
+            tools:ignore="VisualLintBounds" />
 
     </androidx.drawerlayout.widget.DrawerLayout>
 
