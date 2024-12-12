@@ -8,10 +8,10 @@
     <string name="welcome">Bienvenidos al mundo de Mario</string>
     <string name="selectedCharacter">"Se ha seleccionado el personaje "</string>
     <string name="skills">Habilidades</string>
-    <string name="about">Acerca de...</string>
+    <string name="about">Acerca de…</string>
     <string name="developedBy">Aplicación desarrollada por</string>
     <string name="version">Versión</string>
-    <string name="ok">Ok</string>
+    <string name="ok">OK</string>
     <string name="unknown">Desconocida</string>
     <string name="noDataCharacter">No disponibles los datos del personaje.</string>
     <string name="settingsTitle">Ajustes</string>
@@ -19,6 +19,6 @@
     <string name="languageSpanishOrEnglishSummary">Cambiar a inglés.</string>
     <string name="home">Inicio</string>
     <string name="open_navigation_drawer">Abrir menú lateral</string>
-    <string name="close_navigation_drawer">Cerrar navegación lateral</string>
+    <string name="close_navigation_drawer">Cerrar menú lateral</string>
     <string name="logo">Super Mario Bros</string>
 </resources>

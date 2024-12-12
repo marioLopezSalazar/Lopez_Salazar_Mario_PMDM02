@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--NIGHT THEME COLORS-->
 <resources>
     <color name="primary_color">#8B0000</color>
     <color name="background_color">#003A92</color>

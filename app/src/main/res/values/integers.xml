@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- APP CONFIGURATION INTEGER VALUES -->
 <resources>
     <integer name="splashTime">2500</integer>
 </resources>

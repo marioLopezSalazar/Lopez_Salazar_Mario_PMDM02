@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- SPLASH -->
     <style name="Splash">
         <item name="android:cropToPadding">true</item>
         <item name="android:padding">50dp</item>
@@ -10,7 +11,6 @@
 
 
     <!-- TOOLBAR -->
-
     <style name="ToolBarStyle" parent="Theme.Material3.DayNight">
         <item name="android:background">?attr/colorPrimary</item>
         <item name="android:elevation">5dp</item>
@@ -18,7 +18,6 @@
 
 
     <!-- NAVIGATION DRAWER -->
-
     <style name="NavigationDrawerStyle">
         <item name="android:background">@color/background_color</item>
         <item name="android:padding">20dp</item>
@@ -40,7 +39,6 @@
 
 
     <!-- CHARACTERS PICTURES -->
-
     <style name="CharacterPicture">
         <item name="android:contentDescription">@string/image_description</item>
         <item name="android:scaleType">centerInside</item>
@@ -48,7 +46,6 @@
 
 
     <!-- CHARACTERS CARDVIEW -->
-
     <style name="CharacterCardViewStyle">
         <item name="cardBackgroundColor">@color/secondary_color</item>
         <item name="cardCornerRadius">25dp</item>
@@ -69,7 +66,6 @@
 
 
     <!-- CHARACTERS DETAIL -->
-
     <style name="CharacterNameDetailStyle">
         <item name="android:textSize">50sp</item>
         <item name="android:textStyle">bold</item>
@@ -87,6 +83,5 @@
         <item name="android:layout_margin">6dp</item>
         <item name="android:gravity">center</item>
     </style>
-
 
 </resources>

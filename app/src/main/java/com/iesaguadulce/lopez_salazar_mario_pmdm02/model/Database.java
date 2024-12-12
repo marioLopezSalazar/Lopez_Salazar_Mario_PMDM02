@@ -1,69 +1,103 @@
 package com.iesaguadulce.lopez_salazar_mario_pmdm02.model;
 
 import android.content.Context;
-import java.util.*;
 import android.util.Xml;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
-import com.iesaguadulce.lopez_salazar_mario_pmdm02.R;
 import org.xmlpull.v1.XmlPullParser;
-import java.io.*;
+import java.io.InputStream;
+import java.util.ArrayList;
+import com.iesaguadulce.lopez_salazar_mario_pmdm02.R;
 
+/**
+ * Class responsible for reading and interpreting character information
+ * from an XML file and generating a collection of Character objects.
+ *
+ * @author Mario López Salazar
+ * @version 1.1
+ */
 public class Database {
 
+
+    /**
+     * Identifier for the XML file containing character information. Default: res/raw/characters.xml
+     */
+    public static final int CHARACTERS_DATABASE_FILE = R.raw.characters;
+
+
+    /**
+     * Loads character information from an XML file, interprets it,
+     * and generates a collection of Character objects.
+     *
+     * @param context The application context used to access the XML file.
+     * @return A collection of Character objects.
+     */
     @NonNull
-    public static ArrayList<Character> load(Context context){
+    public static ArrayList<Character> load(Context context) {
 
         ArrayList<Character> characters = new ArrayList<>();
 
         try {
-            // Abrir el archivo XML desde res/raw
-            InputStream inputStream = context.getResources().openRawResource(R.raw.characters);
+            // Opening XML file from res/raw:
+            InputStream inputStream = context.getResources().openRawResource(CHARACTERS_DATABASE_FILE);
+
+            // Configuring the XML text parser:
             XmlPullParser parser = Xml.newPullParser();
             parser.setInput(inputStream, null);
 
-            // Variables para los datos del personaje
+            // Variables for storing character data:
             String name = null, picture = null, description = null, detail = null, skills = null;
 
-            // Procesar el XML
+            // First event:
             int eventType = parser.getEventType();
+
+            // Processing the XML file:
             while (eventType != XmlPullParser.END_DOCUMENT) {
+
+                // Tag name:
                 String tagName = parser.getName();
 
                 switch (eventType) {
+
+                    // Starts processing a character:
                     case XmlPullParser.START_TAG:
-                        if ("character".equals(tagName)) {
-                            // Resetear variables
-                            name = picture = description = detail = skills = null;
-                        } else if ("name".equals(tagName)) {
-                            name = parser.nextText();
-                        } else if ("picture".equals(tagName)) {
-                            picture = parser.nextText();
-                        } else if ("description".equals(tagName)) {
-                            description = parser.nextText();
-                        } else if ("detail".equals(tagName)) {
-                            detail = parser.nextText();
-                        } else if ("skills".equals(tagName)) {
-                            skills = parser.nextText();
+                        switch (tagName) {
+                            case "name":
+                                name = parser.nextText();
+                                break;
+                            case "picture":
+                                picture = parser.nextText();
+                                break;
+                            case "description":
+                                description = parser.nextText();
+                                break;
+                            case "detail":
+                                detail = parser.nextText();
+                                break;
+                            case "skills":
+                                skills = parser.nextText();
+                                break;
                         }
                         break;
 
+                    // Ends processing a character:
                     case XmlPullParser.END_TAG:
-                        if ("character".equals(tagName)) {
-                            // Crear un nuevo Character y agregarlo a la lista
+                        if ("character".equals(tagName))
                             characters.add(new Character(name, picture, description, detail, skills));
-                        }
                         break;
                 }
 
-                // Siguiente evento
+                // Next event:
                 eventType = parser.next();
             }
 
+            // Closing XML file:
             inputStream.close();
+
         } catch (Exception e) {
             Toast.makeText(context, R.string.load_error, Toast.LENGTH_SHORT).show();
         }
+
         return characters;
     }
 }

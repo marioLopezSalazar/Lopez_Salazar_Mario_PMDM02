@@ -3,10 +3,11 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- SWITCH TO SPANISH / CAMBIAR A INGLÉS -->
     <SwitchPreferenceCompat
+        android:defaultValue="false"
         android:key="languageEnglish"
-        android:title="@string/languageSpanishOrEnglish"
         android:summary="@string/languageSpanishOrEnglishSummary"
-        android:defaultValue="false" />
+        android:title="@string/languageSpanishOrEnglish" />
 
 </PreferenceScreen>

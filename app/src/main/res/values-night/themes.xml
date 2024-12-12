@@ -1,16 +1,22 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- NIGHT THEME -->
     <style name="Base.Theme.Lopez_Salazar_Mario_PMDM02" parent="Theme.Material3.DayNight.NoActionBar">
 
+        <!-- SPLASH API >= 31 -->
+        <item name="android:windowSplashScreenBackground" tools:targetApi="s">?attr/android:colorBackground</item>
         <item name="android:windowSplashScreenAnimatedIcon" tools:targetApi="s">@drawable/supermario_icon</item>
         <item name="android:windowSplashScreenAnimationDuration" tools:targetApi="s">@integer/splashTime</item>
         <item name="android:windowSplashScreenIconBackgroundColor" tools:targetApi="s">?attr/android:colorBackground</item>
 
+        <!--APP NIGHT COLORS-->
         <item name="colorPrimary">@color/primary_color</item>
         <item name="colorAccent">@color/primary_color</item>
         <item name="colorSecondary">@color/secondary_color</item>
         <item name="android:colorBackground">@color/background_color</item>
         <item name="android:textColorPrimary">@color/white</item>
 
+        <!--APP TEXTS FONT-->
         <item name="android:fontFamily">@font/mariopartyhudson</item>
 
     </style>

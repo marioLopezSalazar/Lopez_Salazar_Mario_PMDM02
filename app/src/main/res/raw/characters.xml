@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- BASE DE DATOS DE PERSONAJES -->
 <characters>
     <character>
         <name>Mario</name>
